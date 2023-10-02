@@ -11,7 +11,7 @@ body {
     font-family: 'Sora', sans-serif;
 }
 
-
+/* ========================== HOMEPAGE ========================== */
 /* =================== NAVBAR =================== */
 #navbar {
     color: #fff;
@@ -48,7 +48,7 @@ header h3 span{
     color: #00A3FF;
 }
 
-/* =================== HERO =================== */
+/* =================== INTRO SECTION =================== */
 #intro {
     width: 920px;
     height: calc(100vh - 4.5rem);
@@ -78,7 +78,6 @@ header h3 span{
 #intro h3, #intro p {
     color: #fff;
 }
-
 #intro span {
     color: #00FFF0;
 }
