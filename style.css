@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Sora:wght@400;500;600;700&display=swap');
 
 :root {
+    --body-bg-color: #212429;
     --primary-blue: #00A3FF;
     --turquoise-cyan: #00FFF0;
 }
@@ -11,7 +12,7 @@
 }
 
 body {
-    background-color: #212429;
+    background-color: var(--body-bg-color);
     font-family: 'Sora', sans-serif;
     color: #fff;
 }
