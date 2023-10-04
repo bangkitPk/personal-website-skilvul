@@ -9,6 +9,14 @@
 body {
     background-color: #212429;
     font-family: 'Sora', sans-serif;
+    color: #fff;
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #00A3FF, #00FFF0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 /* ========================== HOMEPAGE ========================== */
@@ -66,17 +74,10 @@ body {
 #intro h1 {
     font-size: 4rem;
     margin: 20px 0;
-    background: linear-gradient(90deg, #00A3FF, #00FFF0);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
 }
 
 #intro p {
     font-size: 1.5rem;
-}
-#intro h3, #intro p {
-    color: #fff;
 }
 #intro span {
     color: #00FFF0;
@@ -100,3 +101,29 @@ body {
 }
 
 /* =================== ABOUT PAGE =================== */
+section#about-me {
+    padding: 7rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10%;
+}
+
+section#about-me img {
+    width: 35%;
+    height: auto;
+    border-radius: 25px;
+}
+
+section#about-me h1 {
+    font-size: 3.5rem;
+}
+.line {
+    width: 30%;
+    height: 3px;
+    background-color: #00A3FF;
+}
+
+section#about-me p {
+    margin: 2rem 0;
+}
