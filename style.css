@@ -52,7 +52,7 @@ body {
     letter-spacing: 3px;
 }
 
-#header h3 span{
+#navbar h3 span{
     color: #00A3FF;
 }
 
@@ -102,7 +102,7 @@ body {
 
 /* =================== ABOUT PAGE =================== */
 section#about-me {
-    padding: 7rem 5rem;
+    padding: 3rem 5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -125,5 +125,12 @@ section#about-me h1 {
 }
 
 section#about-me p {
-    margin: 2rem 0;
+    font-size: 1.3rem;
+    margin: 2em 0;
+}
+
+section#about-me a {
+    color: #00A3FF;
+    margin-right: 1em;
+    font-size: 1.5rem;
 }
