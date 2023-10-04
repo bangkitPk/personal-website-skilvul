@@ -23,28 +23,28 @@ body {
     box-shadow: 0 5.33px 50px rgba(0, 0, 0, .3);
 }
 
-nav ul{
+#navbar nav ul{
     display: flex;
     gap: 6.25rem;
     list-style: none;
 }
 
-nav a {
+#navbar nav a {
     text-decoration: none;
     color: #fff;
     transition: .3s ease-in-out;
 }
 
-nav a:hover {
+#navbar nav a:hover {
     color: #00A3FF;
     text-shadow: 0 0 3px #00A3FF;
 }
 
-header h3 {
+#navbar h3 {
     letter-spacing: 3px;
 }
 
-header h3 span{
+#header h3 span{
     color: #00A3FF;
 }
 
