@@ -24,11 +24,16 @@ body {
     color: transparent;
 }
 
-/* ========================== HOMEPAGE ========================== */
+/* ================================== HOMEPAGE ========================== */
 /* =================== NAVBAR =================== */
 #navbar {
+    width: 100vw;
     color: #fff;
+    background-color: var(--body-bg-color);
     padding: 1.5rem 3.75rem;
+    position: fixed;
+    z-index: 1;
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -65,7 +70,7 @@ body {
 #intro {
     width: 920px;
     height: calc(100vh - 4.5rem);
-    margin: auto;
+    margin: 4.5rem auto 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -105,9 +110,11 @@ body {
     box-shadow: 0 0 35px var(--primary-blue);
 }
 
-/* =================== ABOUT PAGE =================== */
+/* =============================== ABOUT PAGE =================== */
+/* =================== ABOUT ME =================== */
 section#about-me {
-    padding: 3rem 5rem;
+    margin-top: 7rem;
+    padding: 0 5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -143,3 +150,5 @@ section#about-me a {
 section#about-me a:hover i {
     text-shadow: 0 0 3px var(--primary-blue);
 }
+
+/* ============== EDUCATION SECTION ============== */
