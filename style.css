@@ -15,7 +15,7 @@ body {
     background-color: var(--body-bg-color);
     font-family: 'Sora', sans-serif;
     color: #fff;
-    padding: 0 5rem;
+    padding: 8rem 5rem 0 5rem;
 }
 
 .gradient-text {
@@ -71,8 +71,8 @@ body {
 /* =================== INTRO SECTION =================== */
 #intro {
     width: 920px;
-    height: calc(100vh - 4.5rem);
-    margin: 4.5rem auto 0 auto;
+    height: calc(100vh - 10rem);
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -112,10 +112,10 @@ body {
     box-shadow: 0 0 35px var(--primary-blue);
 }
 
-/* =============================== ABOUT PAGE =================== */
+/* =============================== ABOUT PAGE =============================== */
 /* =================== ABOUT ME =================== */
 section#about-me {
-    margin-top: 7rem;
+    /* margin-top: 7rem; */
     display: flex;
     justify-content: space-between;
     align-items: center;
