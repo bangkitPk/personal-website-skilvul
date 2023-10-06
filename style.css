@@ -3,8 +3,11 @@
 :root {
     --body-bg-color: #212429;
     --primary-blue: #00A3FF;
+    --gray-color: rgba(255, 255, 255, .5);
     --turquoise-cyan: #00FFF0;
+    --big-font-size: 3.5rem;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -129,7 +132,8 @@ section#about-me img {
 }
 
 section#about-me h1 {
-    font-size: 3.5rem;
+    width: fit-content;
+    font-size: var(--big-font-size);
     margin-bottom: .3em;
 }
 .line {
@@ -159,6 +163,7 @@ section#education, section#hobbies {
 }
 
 section#education h2, section#hobbies h2 {
+    width: fit-content;
     margin-bottom: 1.5em;
     padding-bottom: .5em;
     font-size: 3rem;
@@ -167,7 +172,7 @@ section#education h2, section#hobbies h2 {
 
 section#education h2::after, section#hobbies h2::after {
     content: "";
-    width: 100%;
+    width: calc(100vw - 10rem);
     height: 2px;
     position: absolute;
     bottom: 0;
@@ -200,4 +205,67 @@ section#hobbies > p {
 
 section#hobbies i {
     width: 3rem;
+}
+
+/* =============================== MY SKILLS PAGE =============================== */
+section#my-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3em;
+}
+
+section#my-skills h1 {
+    width: fit-content;
+    padding-bottom: .1em;
+    font-size: var(--big-font-size);
+    position: relative;
+}
+
+section#my-skills h1::after {
+    content: "";
+    width: 75%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary-blue), var(--turquoise-cyan));
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section#my-skills .skills {
+    margin-top: 3em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5em;
+}
+
+section#my-skills .skill {
+    background-color: #191919;
+    padding: 2em;
+    /* border: 2px solid var(--primary-blue); */
+    display: flex;
+    flex-direction: column;
+    transition: .3s;
+}
+
+section#my-skills .skill:hover {
+    box-shadow: -5px 5px var(--turquoise-cyan);
+    transform: translate(5px, -5px);
+    cursor: pointer;
+}
+
+section#my-skills .skill:hover i {
+    color: var(--turquoise-cyan);
+}
+
+section#my-skills .skill i {
+    margin-bottom: .5em;
+}
+section#my-skills .skill h2 {
+    margin: .5em 0;
+}
+
+section#my-skills .skill p {
+    color: var(--gray-color);
 }
