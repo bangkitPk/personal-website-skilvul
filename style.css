@@ -24,6 +24,7 @@ body {
 .gradient-text {
     background: linear-gradient(90deg, var(--primary-blue), var(--turquoise-cyan));
     -webkit-background-clip: text;
+    -moz-background-clip: text;
     background-clip: text;
     color: transparent;
 }
@@ -248,7 +249,7 @@ section#my-skills .skill {
     padding: 2em;
     display: flex;
     flex-direction: column;
-    transition: .3s;
+    transition: transform .3s, box-shadow .3s;
 }
 
 section#my-skills .skill:hover {
@@ -258,7 +259,7 @@ section#my-skills .skill:hover {
 }
 
 section#my-skills .skill i {
-    transition: .3s;
+    transition: color .3s;
     margin-bottom: .5em;
 }
 
