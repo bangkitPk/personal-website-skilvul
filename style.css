@@ -323,7 +323,7 @@ section#my-blogs .blogs-container a:hover {
 section#my-blogs img {
     width: 100%;
     height: auto;
-    border-radius: 1em;
+    border-radius: .7em;
 }
 
 section#my-blogs .header-blog-img {
